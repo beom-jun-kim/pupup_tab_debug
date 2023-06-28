@@ -1,0 +1,376 @@
+<!--@layout(/layout/basic/main.html)-->
+<!--@css(/layout/basic/css/firstCate.css)-->
+
+<main>
+    <section id="new">
+      <div class="inner">
+        <div class="title">
+          <div class="minTitle">
+            <h6>for SPORTS</h6>
+          </div>
+          <div class="desc">
+            <p>라이딩 필수템</p>
+          </div>
+        </div>
+        <div class="newSliderWrap">
+          <div class="newSlider">
+            <div>
+              <div class="imgBoxWrap">
+                <div class="imgBox">
+                    <a href="/category/사계절용/281/"><img
+                          src="/web/img/23_visual/accessories_visual/accessories_visual_23-0502-01.jpg"
+                          alt="세련된 스타일과 높은 퀄리티1"/></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="imgBoxWrap">
+                <div class="imgBox">
+                    <a href="/category/매쉬마스크/235/"><img
+                          src="/web/img/23_visual/accessories_visual/accessories_visual_23-0403-01.jpg"
+                          alt="세련된 스타일과 높은 퀄리티2"/></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="imgBoxWrap">
+                <div class="imgBox">
+                    <a href="/category/가방/233/"><img
+                          src="/web/img/23_visual/accessories_visual/accessories_visual_23-0403-03.jpg"
+                          alt="세련된 스타일과 높은 퀄리티3"/></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="imgBoxWrap">
+                <div class="imgBox">
+                    <a href="/category/토시/71/"><img
+                          src="/web/img/23_visual/accessories_visual/accessories_visual_23-0403-04.jpg"
+                          alt="세련된 스타일과 높은 퀄리티4"/></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="imgBoxWrap">
+                <div class="imgBox">
+                    <a href="/category/장갑/214/"><img
+                          src="/web/img/23_visual/accessories_visual/accessories_visual_23-0403-05.jpg"
+                          alt="세련된 스타일과 높은 퀄리티5"/></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="imgBoxWrap">
+                <div class="imgBox">
+                    <a href="/category/바라클라바/237/"><img
+                          src="/web/img/23_visual/accessories_visual/accessories_visual_23-0403-06.jpg"
+                          alt="세련된 스타일과 높은 퀄리티6"/></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="imgBoxWrap">
+                <div class="imgBox">
+                    <a href="/category/카퍼마스크/276/"><img
+                          src="/web/img/23_visual/accessories_visual/accessories_visual_23-0403-07.jpg"
+                          alt="세련된 스타일과 높은 퀄리티7"/></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="imgBoxWrap">
+                <div class="imgBox">
+                    <a href="/category/기타/109/"><img
+                          src="/web/img/23_visual/accessories_visual/accessories_visual_23-0403-08.jpg"
+                          alt="세련된 스타일과 높은 퀄리티8"/></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="hotItem">
+      <div class="inner">
+        <div class="title">
+          <div class="desc">
+            <p>WEEKLY BEST</p>
+          </div>
+          <div class="minTitle">
+            <h6>이번주 MCN's Pick!<br>인기 많은 핫한 제품</h6>
+          </div>
+        </div>
+        <div class="hotPrdWrap" module="product_listmain_17">
+          <!--
+                  $count = 10
+                  $basket_result = /product/add_basket.html
+                  $basket_option = /product/basket_option.html
+                  $moreview = yes
+                  $cache = no
+              -->
+  
+          <ul class="prdList">
+            <div class="hotItemSlide">
+              <div>
+                <li id="anchorBoxId_{$product_no}" style="padding: 1rem">
+                  <div class="prdList__item">
+                    <div class="thumbnail">
+                      <a href="{$link_product_detail}">
+                          <img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" loading="lazy" width="100%" height="100%" /><span module="product_Imagestyle">
+                          <span class="prdIcon {$icon_class_name}" style="background-image: url('{$icon_url}')"></span>
+                      </a>
+                      <div class="icon">
+                          {$soldout_icon} {$stock_icon} {$recommend_icon}
+                          {$new_icon} {$product_icons} {$today_arrival_icon}
+                          {$pickup_icon}
+                      </div>
+                      <div class="icon__box displaynone">
+                        <span class="wish">{$list_wish_icon}</span>
+                        <span class="cart">{$basket_icon}</span>
+                      </div>
+                      <span class="benefit">{$benefit_icons}</span>
+                    </div>
+                    <div class="description">
+                      <div class="name"
+                        ><a
+                          href="{$link_product_detail}"
+                          class="{$product_name_display|display}"
+                          ><span
+                            class="title {$product_name_title_display|display}"
+                            >{$product_name_title} :</span
+                          >
+                          {$product_name}</a
+                        ></div
+                      >
+                      <ul module="product_ListItem" class="spec">
+                        <li class="{$item_display|display}">
+                          <strong class="title {$item_title_display|display}"
+                            >{$item_title} :</strong
+                          >
+                          {$item_content}
+                        </li>
+                        <li class="{$item_display|display}">
+                          <strong class="title {$item_title_display|display}"
+                            >{$item_title} :</strong
+                          >
+                          {$item_content}
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </div>
+              <div>
+                <li id="anchorBoxId_{$product_no}" style="padding: 1rem">
+                  <div class="prdList__item">
+                    <div class="thumbnail">
+                      <a href="{$link_product_detail}"
+                        ><img
+                          src="{$image_medium}"
+                          id="{$image_medium_id}"
+                          alt="{$seo_alt_tag}"
+                          loading="lazy"
+                          width="100%"
+                          height="100%" /><span module="product_Imagestyle"
+                          ><span
+                            class="prdIcon {$icon_class_name}"
+                            style="background-image: url('{$icon_url}')"
+                          ></span></span
+                      ></a>
+                      <div class="icon">
+                          {$soldout_icon} {$stock_icon} {$recommend_icon}
+                          {$new_icon} {$product_icons} {$today_arrival_icon}
+                          {$pickup_icon}
+                      </div>
+                      <div class="icon__box displaynone">
+                        <span class="wish">{$list_wish_icon}</span>
+                        <span class="cart">{$basket_icon}</span>
+                      </div>
+                      <span class="benefit">{$benefit_icons}</span>
+                    </div>
+                    <div class="description">
+                      <div class="name"
+                        ><a
+                          href="{$link_product_detail}"
+                          class="{$product_name_display|display}"
+                          ><span
+                            class="title {$product_name_title_display|display}"
+                            >{$product_name_title} :</span
+                          >
+                          {$product_name}</a
+                        ></div
+                      >
+                      <ul module="product_ListItem" class="spec">
+                        <li class="{$item_display|display}">
+                          <strong class="title {$item_title_display|display}"
+                            >{$item_title} :</strong
+                          >
+                          {$item_content}
+                        </li>
+                        <li class="{$item_display|display}">
+                          <strong class="title {$item_title_display|display}"
+                            >{$item_title} :</strong
+                          >
+                          {$item_content}
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+  
+    <section id="firCateList">
+      <div class="inner">
+        <div class="prdCount">
+          <span>8개의 상품</span>
+        </div>
+        <div class="firCateWrap" module="product_listmain_18">
+          <!--
+                  $count = 8
+                  $basket_result = /product/add_basket.html
+                  $basket_option = /product/basket_option.html
+                  $moreview = yes
+                  $cache = no
+              -->
+  
+          <ul class="prdList">
+            <li id="anchorBoxId_{$product_no}">
+              <div class="prdList__item">
+                <div class="thumbnail">
+                  <a href="{$link_product_detail}"
+                    ><img
+                      src="{$image_medium}"
+                      id="{$image_medium_id}"
+                      alt="{$seo_alt_tag}"
+                      loading="lazy"
+                      width="100%"
+                      height="100%" /><span module="product_Imagestyle"
+                      ><span
+                        class="prdIcon {$icon_class_name}"
+                        style="background-image: url('{$icon_url}')"
+                      ></span></span
+                  ></a>
+                  <div class="icon">
+                      {$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon}
+                      {$product_icons} {$today_arrival_icon} {$pickup_icon}
+                  </div>
+                  <div class="icon__box displaynone">
+                    <span class="wish">{$list_wish_icon}</span>
+                    <span class="cart">{$basket_icon}</span>
+                  </div>
+                  <span class="benefit">{$benefit_icons}</span>
+                </div>
+                <div class="description">
+                  <strong class="name"
+                    ><a
+                      href="{$link_product_detail}"
+                      class="{$product_name_display|display}"
+                      ><span class="title {$product_name_title_display|display}"
+                        >{$product_name_title} :</span
+                      >
+                      {$product_name}</a
+                    ></strong
+                  >
+                  <ul module="product_ListItem" class="spec">
+                    <li class="{$item_display|display}">
+                      <strong class="title {$item_title_display|display}"
+                        >{$item_title} :</strong
+                      >
+                      {$item_content}
+                    </li>
+                    <li class="{$item_display|display}">
+                      <strong class="title {$item_title_display|display}"
+                        >{$item_title} :</strong
+                      >
+                      {$item_content}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+  
+            <li id="anchorBoxId_{$product_no}">
+              <div class="prdList__item">
+                <div class="thumbnail">
+                  <a href="{$link_product_detail}"
+                    ><img
+                      src="{$image_medium}"
+                      id="{$image_medium_id}"
+                      alt="{$seo_alt_tag}"
+                      loading="lazy"
+                      width="100%"
+                      height="100%" /><span module="product_Imagestyle"
+                      ><span
+                        class="prdIcon {$icon_class_name}"
+                        style="background-image: url('{$icon_url}')"
+                      ></span></span
+                  ></a>
+                  <div class="icon">
+                      {$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon}
+                      {$product_icons} {$today_arrival_icon} {$pickup_icon}
+                  </div>
+                  <div class="icon__box displaynone">
+                    <span class="wish">{$list_wish_icon}</span>
+                    <span class="cart">{$basket_icon}</span>
+                  </div>
+                  <span class="benefit">{$benefit_icons}</span>
+                </div>
+                <div class="description">
+                  <strong class="name"
+                    ><a
+                      href="{$link_product_detail}"
+                      class="{$product_name_display|display}"
+                      ><span class="title {$product_name_title_display|display}"
+                        >{$product_name_title} :</span
+                      >
+                      {$product_name}</a
+                    ></strong
+                  >
+                  <ul module="product_ListItem" class="spec">
+                    <li class="{$item_display|display}">
+                      <strong class="title {$item_title_display|display}"
+                        >{$item_title} :</strong
+                      >
+                      {$item_content}
+                    </li>
+                    <li class="{$item_display|display}">
+                      <strong class="title {$item_title_display|display}"
+                        >{$item_title} :</strong
+                      >
+                      {$item_content}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <script>
+    $(".newSlider").slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      nextArrow: false,
+      prevArrow: false,
+    });
+  
+    $(".hotItemSlide").slick({
+      infinite: true,
+      dots: true,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      nextArrow:false,
+      prevArrow:false,
+    });
+  </script>
+  

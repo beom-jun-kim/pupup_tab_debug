@@ -1,0 +1,6 @@
+.xans-myshop-unavaillist { margin:14px 7px; }
+.xans-myshop-unavaillist .item { margin:7px 0 0; font-size:12px;}
+.xans-myshop-unavaillist .item:first-child { margin-top:0; }
+.xans-myshop-unavaillist .item h3 { padding:14px; font-size:var(--small-font); line-height:1.2em; border:1px solid #d5d5d5; overflow:hidden;  font-weight: 400; border-bottom: none; }
+.xans-myshop-unavaillist .empty { padding:40px 0; font-size:var(--small-font); text-align:center; }
+.xans-myshop-historylist .ec-base-table table:after {display: none;}

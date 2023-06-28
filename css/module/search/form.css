@@ -1,0 +1,141 @@
+#searchPoint h2 {
+    font-size: var(--normal-font);
+    text-align: center;
+    margin: 20px 0;
+}
+
+#searchForm #titleArea {
+    background-color: transparent;
+    border-bottom: 0;
+    margin-bottom: 10px;
+}
+
+#searchForm #titleArea span.count {
+    position: static;
+    color: #484848;
+}
+
+#searchForm #titleArea h2 {
+    border-bottom: 1px solid #c2c2c2;
+    background: #fff;
+}
+
+.xans-search-form .empty {
+    padding: 50px 0;
+    color: #4a5164;
+    text-align: center;
+    font-size: var(--small-font);
+}
+
+.xans-search-form .searchBar {
+    display: flex;
+    justify-content: center;
+}
+
+.xans-search-form .searchbox {
+    position: relative;
+    width: 75%;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+
+.xans-search-form .searchbox input#keyword {
+    width: 100%;
+    height: 45px;
+    padding: 0 10px;
+    border: 0;
+    font-size: var(--normal-font);
+}
+
+.xans-search-form .searchBar .button {
+    border: none;
+    background: #2e2e2e;
+    width: 47px;
+    height: 47px;
+    line-height: 47px;
+}
+
+.xans-search-form .searchBar .button .btnStrong {
+    background: none;
+    border: 2px solid #2e2e2e;
+    background: #2e2e2e;
+}
+
+.xans-search-form .searchBar .button .btnStrong i {
+    color: var(--white-color);
+    font-size: var(--title-font);
+}
+
+.xans-search-form .searchbox .button {
+    width: 60px;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    text-align: right;
+}
+
+.xans-search-form .searchbox .button .btnStrong {
+    height: 29px;
+}
+
+.xans-search-form .searchbox .btnDelete {
+    overflow: hidden;
+    position: absolute;
+    right: 72px;
+    top: 12px;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    cursor: pointer;
+    text-indent: 100%;
+    font-size: 0;
+    white-space: nowrap;
+    background: url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_delete.png") no-repeat 0 0;
+    background-size: 20px 20px;
+}
+
+.xans-search-form .inner {
+    margin-top: 20px;
+    padding: 0 14px;
+    border-top: 3px solid #000;
+    border-bottom: 1px solid var(--line-color);
+}
+
+.xans-search-form .inner select {
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-weight: var(--bold-font);
+    font-size: var(--normal-font);
+    font-family: "Spoqa Han Sans Neo","sans-serif";
+}
+
+.xans-search-form .inner p {
+    float: left;
+}
+
+.xans-search-form .inner p.button {
+    float: right;
+    padding: 2px 0 0;
+}
+
+.xans-search-form .inner .button img {
+    display: block;
+    border: 1px solid red;
+}
+
+.xans-search-result {
+    margin-top: 10px;
+}
+
+.xans-search-result .mileage {
+    display: none !important;
+}
+
+.xans-search-result .prdList>li {
+    padding: 10px;
+}
+
+.xans-search-paging.ec-base-paginate.typeList {
+    padding: 15px 0 30px;
+}

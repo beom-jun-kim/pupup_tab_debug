@@ -1,0 +1,75 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div module="Board_ListPackage_8">
+  <!--@css(/css/module/board/listPackage.css)-->
+  <div id="titleArea" module="board_title_8">
+    <h2>{$board_name}</h2>
+  </div>
+
+  <div module="board_ButtonList_8" class="ec-base-button {$write_display|display}">
+    <a href="/board/news/write.html{$param_write}" class="btnStrong">글쓰기</a>
+  </div>
+
+  <div class="boardSort">
+    <span module="board_category_8">{$form.board_category}</span>
+    <span module="board_ReplySort_8">{$reply_sort}</span>
+  </div>
+
+  <div module="board_search_8">
+    <!--@css(/css/module/board/search.css)-->
+
+  <div module="board_list_8">
+    <!--
+            $count = 12
+            $login_page_url = /member/login.html
+            $deny_access_url = /index.html
+        -->
+    <ul>
+      <li>
+        <a href="/board/news/read.html{$param_read}" class="imgLink"
+          ><img
+            src="/file_data/mcn8691/{$real_filename}"
+            onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'"
+            alt=""
+        /></a>
+        {$checkbox}
+        <!-- <a href="{$link_board_detail}" class="imgLink subject">[{$no}] {$subject} {$comment_count}</a> -->
+        <span>
+          <strong>Editer BY : {$member_icon}{$writer} </strong>
+          <em class="{$date_display|display}">DATE : {$write_date}</em>
+        </span>
+      </li>
+      <li>
+        <a href="/board/news/read.html{$param_read}" class="imgLink"
+          ><img
+            src="/file_data/mcn8691/{$real_filename}"
+            onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'"
+            alt=""
+        /></a>
+        {$checkbox}
+        <!-- <a href="{$link_board_detail}" class="imgLink subject">[{$no}] {$subject} {$comment_count}</a> -->
+        <span>
+          <strong>Editer BY : {$member_icon}{$writer} </strong>
+          <em class="{$date_display|display}">DATE : {$write_date}</em>
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div module="board_paging_8" class="ec-base-paginate typeList">
+  <a href="{$param_prev}">이전 페이지</a>
+  <ol>
+    <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+    <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+  </ol>
+  <a href="{$param_next}">다음 페이지</a>
+</div>
+
+<div module="board_search_8">
+    <!--@css(/css/module/board/search.css)-->
+    <fieldset class="boardSearch">
+        <legend>게시물 검색</legend>
+        <div class="category">{$form.search_date} {$form.search_key}</div>
+        <div class="ec-base-field">{$form.search} <button class="btnStrong" onclick="{$action_search}">검색</button></div>
+    </fieldset>
+</div>

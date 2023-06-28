@@ -1,0 +1,34 @@
+.xans-product-relation { margin-bottom: 50px; }
+.xans-product-relation:first-child h2 { border-top:0; }
+.xans-product-relation h2 { margin-bottom: 10px; padding:14px 14px 0; height:43px; font-size:var(--small-font);}
+.xans-product-relation img { max-width:100%; }
+.xans-product-relation li { vertical-align:top; margin:0 0 14px; }
+.xans-product-relation > ul > li > ul { display:table; table-layout:fixed; width:100%; font-size:0; line-height:0; box-sizing:border-box; padding:0 7px; }
+.xans-product-relation > ul > li > ul > li { position:relative; display:inline-block; padding:0; text-align:center; vertical-align:top; }
+.xans-product-relation .strike { font-weight:normal; text-decoration:line-through; }
+
+/* swipe 기능을 사용하지않는경우 */
+.xans-product-relation > ul[class*="grid"] { display:table; table-layout:fixed; width:100%; font-size:0; line-height:0; box-sizing:border-box; padding:0 7px 0; }
+.xans-product-relation > ul[class*="grid"] > li { position:relative; display:inline-block; padding:0; vertical-align:top; }
+.xans-product-relation .thumbnail { padding:0 7px; margin:0 0 10px; }
+.xans-product-relation .thumbnail img { width:100%; border:1px solid #ECECEC; }
+.xans-product-relation .information { position:relative; min-height:10px; margin:7px 7px 0; }
+.xans-product-relation .prdPrice {font-size: var(--normal-font); font-weight: var(--bold-font);}
+.xans-product-relation .name { margin:10px 0; font-size:var(--small-font); line-height:20px; height: 37px; text-overflow: ellipsis; overflow: hidden; color: var(--sec-font-color);}
+.xans-product-relation .name strong {font-weight: 400; color: var(--sec-font-color);}
+.xans-product-relation .name b {color: var(--sec-font-color); font-weight: 400;}
+.xans-product-relation .price { margin:0 0 10px; color:#000; font-family:Tahoma; font-size:13px; line-height:1.25em; }
+.xans-product-relation .strike { text-decoration:line-through; }
+.xans-product-relation .grid2 li { width:50%; }
+.xans-product-relation .grid3 li { width:33.333%; }
+.xans-product-relation .grid4 li { width:25%; }
+.xans-product-relation .grid5 li { width:20%; }
+
+
+.xans-product-relation .swiper-slide {margin-right: 0 !important; padding: 1rem;}
+.items-swiper .cont {position: relative;}
+.swiper-container-free-mode > .swiper-wrapper {-webkit-transition-timing-function: ease-out; transition-timing-function: ease-out;}
+.prd-item .thumbs {position: relative;}
+.prd-item .thumbs > img {max-width: 100%; height: auto; image-rendering: -webkit-optimize-contrast;}
+.swiper-container-horizontal > .swiper-scrollbar {position: absolute; left: 50%; z-index: 50; height: 6px; width: 90%; background: rgb(235 235 235); transform: translateX(-50%);}
+.swiper-scrollbar .swiper-scrollbar-drag {background: #111; cursor: pointer; border-radius: 0;}

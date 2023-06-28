@@ -1,0 +1,1 @@
+window.jQuery3_6_0 = jQuery.noConflict(true);

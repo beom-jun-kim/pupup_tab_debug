@@ -1,0 +1,4 @@
+.xans-myshop-wishlistbutton { padding:10px 7px 7px; }
+.xans-myshop-wishlistbutton .select .gRight { float:right; }
+.xans-myshop-wishlistbutton [class*="btn"].mini {height: 30px; line-height: 30px; font-size: var(--small-font);}
+.xans-myshop-wishlistbutton .ec-base-button.gFull .btnSubmit {height: 45px; line-height: 45px;}

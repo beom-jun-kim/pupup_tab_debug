@@ -1,0 +1,7 @@
+.xans-board-movement { background:#fff; padding:10px 0; }
+.xans-board-movement .boardMovement {padding: 5px 0; overflow:hidden; margin:0; font-size:var(--small-font); /* border-bottom:1px solid #d5d5d5; */ }
+.xans-board-movement li {display: flex;}
+.xans-board-movement strong,
+.xans-board-movement a { float:left; position:relative; height:30px; line-height:30px; }
+.xans-board-movement strong {padding:0 10px; font-weight:normal; white-space: nowrap;}
+.xans-board-movement a { width:100%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }

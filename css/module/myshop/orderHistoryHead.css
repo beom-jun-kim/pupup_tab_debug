@@ -1,0 +1,136 @@
+/* 검색기간설정 폼 */
+.xans-myshop-orderhistoryhead fieldset {
+    padding: 7px 8px;
+    font-size: var(--small-font);
+}
+
+.xans-myshop-orderhistoryhead fieldset img {
+    vertical-align: middle;
+    position: absolute;
+    top: -15px;
+    left: -37px;
+}
+
+.xans-myshop-orderhistoryhead fieldset #dataSearch {
+    display: none;
+    margin-bottom: 10px;
+}
+
+.xans-myshop-orderhistoryhead fieldset #dataSearch button {
+    border: 0;
+    margin: 0 0 0 4px;
+    position: relative;
+}
+
+.xans-myshop-orderhistoryhead fieldset .term {
+    float: left;
+    width: 34px;
+    margin-top: 7px;
+}
+
+.xans-myshop-orderhistoryhead fieldset .term+.ec-base-button {
+    overflow: hidden;
+    margin: 0;
+}
+
+.xans-myshop-orderhistoryhead fieldset .term+.ec-base-button a:first-child {
+    margin-left: 0;
+}
+
+.xans-myshop-orderhistoryhead fieldset .fText {
+    width: 39%;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 14px;
+    border: 1px solid #d5d5d5;
+}
+
+.xans-myshop-orderhistoryhead fieldset #history_end_date {
+    margin: 0 0 0 5px;
+}
+
+.xans-myshop-orderhistoryhead fieldset input[type="image"] {
+    width: 45px;
+}
+
+.xans-myshop-orderhistoryhead fieldset button {
+    margin: 0 0 0 2px;
+}
+
+.xans-myshop-orderhistoryhead .btnNormal,
+.xans-myshop-orderhistoryhead .btnBasic {
+    font-size: var(--small-font);
+    letter-spacing: -1px;
+}
+
+.xans-myshop-orderhistoryhead a.btnBasic {
+    border: 1px solid #bcbcbc;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background: #2e2e2e;
+    color: var(--white-color);
+}
+
+.xans-myshop-orderhistoryhead .stateSelect {
+    display: block;
+    position: relative;
+    margin: 0 0 7px;
+    /* padding:0 1px 0 34px; */
+}
+
+.xans-myshop-orderhistoryhead .stateSelect .state {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 29px;
+    line-height: 29px;
+}
+
+.xans-myshop-orderhistoryhead .stateSelect select {
+    width: 100%;
+    height: 45px;
+}
+
+.xans-myshop-orderhistoryhead a.selected {
+    border: 1px solid #000;
+}
+
+span#xans_myshop_total_orders_cs,
+span#xans_myshop_total_orders:before {
+    display: none;
+}
+
+.xans-myshop-orderhistoryhead .ec-base-button[class*="gColumn"] {
+    margin: 0 0 10px 0;
+}
+
+.xans-myshop-orderhistoryhead .ec-base-button[class*="gColumn"] a {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+}
+
+.ec-base-tab a span {
+    white-space: nowrap;
+}
+
+.xans-myshop-orderhistoryhead .btnNormal {
+    border-right: none;
+}
+
+.xans-myshop-orderhistoryhead .btnNormal:last-child {
+    border-right: 1px solid #bcbcbc;
+}
+
+.xans-myshop-orderhistoryhead .ec-base-help {
+    margin: 8px;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button {
+    font-size: var(--small-font);
+}
+
+
+.xans-myshop-orderhistorylistitem [class*="btn"].mini {font-size: var(--small-font);}

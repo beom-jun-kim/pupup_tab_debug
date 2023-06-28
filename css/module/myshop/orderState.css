@@ -1,0 +1,29 @@
+.xans-myshop-orderstate .state {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.xans-myshop-orderstate .state .order {
+    display: flex;
+}
+
+.xans-myshop-orderstate .state .order li {
+    position: relative;
+    width: 25%;
+    padding: 20px 0;
+    text-align: center;
+    border-right: 1px solid #eee;
+}
+
+.xans-myshop-orderstate .state .order li:last-child {
+    border-right: none;
+}
+
+.xans-myshop-orderstate .state .order li span {
+    display: block;
+}
+
+.xans-myshop-orderstate .state .order li span.count {
+    margin-bottom: 5px;
+}

@@ -1,0 +1,45 @@
+.titleArea {text-align: center; padding: 10px 0;}
+
+/* 리스트 */
+.xans-myshop-wishlist { margin:14px 7px 0; }
+.xans-myshop-wishlist .ec-base-prdInfo:last-child { margin-bottom:0; }
+.xans-myshop-wishlist .ec-base-prdInfo .prdFoot { padding:6px 0; border-top:1px solid #ececec; color:#1b1b1b; background:#fff; }
+.xans-myshop-wishlist .empty { padding:20px 0 30px; color:#212530; font-size:12px; text-align:center; }
+
+/* 배송비 레이어 */
+.differentialShipping { display:inline-block; position:relative; z-index:10; width:13px; height:13px; vertical-align:middle; }
+.differentialShipping .btnHelp { display:inline-block; overflow:hidden; width:13px; height:13px; font-size:0; vertical-align:top; background:url("//img.echosting.cafe24.com/skin/mobile/common/ico_help2.png") no-repeat 50% 50%; background-size:13px 13px; }
+.differentialShipping .layerShipping { display:none; z-index:1000; position:fixed; left:7px; width:100%; top:100px; box-sizing:border-box; margin:0; padding:0 14px 0 0; }
+.differentialShipping .layerShipping p { padding:12px; color:#fff; background-color:#353535; border:1px solid #353535; border-bottom:0; border-radius:4px 4px 0 0; }
+.differentialShipping .layerShipping p strong { font-weight:normal; font-size:13px; }
+.differentialShipping .layerShipping ul { padding:14px 7px; border:1px solid #353535; border-top:0; border-radius:0 0 4px 4px; background-color:#f0f0f0; }
+.differentialShipping .layerShipping li { padding:12px; overflow:hidden; font-size:11px; background:#fff; border:1px solid #d5d5d5; border-top:0; }
+.differentialShipping .layerShipping li:first-child { border-top:1px solid #d5d5d5; ; }
+.differentialShipping .layerShipping li strong { float:left; font-weight:normal; color:#757575; }
+.differentialShipping .layerShipping li .price { float:right; font-weight:bold; font-family:Tahoma; color:#353535; }
+.differentialShipping .layerShipping .btnClose { position:absolute; right:24px; top:12px; overflow:hidden; width:18px; height:18px; font-size:0; background:url("http://img.echosting.cafe24.com/skin/mobile/layout/ico_close_white.png") no-repeat 50% 50%; background-size:20px 20px; }
+
+.description .info {display: none;}
+.xans-product-recentlist .ec-base-prdInfo .thumbnail {overflow: auto; width: auto; height: auto; border: none;}
+.xans-product-recentlist .buttonGroup {margin: 10px 0;}
+.xans-product-recentlist .name {font-size: var(--small-font); margin-top: 10px;}
+.xans-product-recentlist .btnDelete {font-size: var(--small-font); border: 1px solid var(--line-color); padding: 5px 8px; height: 31px;}
+.xans-product-recentlist span.optionDesc {margin-right: 5px; vertical-align: middle;}
+.xans-product-recentlist strong.txtEm,
+.xans-product-recentlist .strike strong {font-size: var(--small-font);}
+.xans-product-recentlist .strike strong {color: var(--sec-font-color); font-weight: 400; text-decoration: line-through;}
+.xans-product-recentlist .ec-base-prdInfo {margin-bottom: 20px;}
+.xans-product-recentlist {margin: 0 7px 0;}
+.xans-product-recentlist .gRight {display: flex; justify-content: space-between; margin-top: 20px;}
+.xans-product-recentlist .btnSubmit {height: 30px; line-height: 30px; border: none;}
+.xans-product-recentlist .ec-base-prdEmpty {padding: 20px 0; text-align: center; font-size: var(--small-font);}
+
+.xans-myshop-wishlistitem .ec-base-prdInfo .option > li .optionDesc {font-size: var(--small-font);}
+.xans-myshop-wishlistitem .ec-base-prdInfo .option > li .name {margin: 10px 0;}
+.xans-myshop-wishlistitem .ec-base-prdInfo .prdFoot .gRight {font-size: var(--small-font); font-weight: 400;}
+.xans-myshop-wishlistitem .ec-base-prdInfo .prdFoot .gRight strong {font-weight: 400;}
+.xans-myshop-wishlistitem .ec-base-prdInfo {margin: 0 0 20px;}
+.thumbnail img {width: auto;}
+
+
+.xans-product-recentlist .xans-product-listitem .btnNormal {height: 31px;}

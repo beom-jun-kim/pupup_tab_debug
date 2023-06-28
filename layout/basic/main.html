@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <title></title>
+    <!--@css(/layout/basic/css/common.css)-->
+    <!--@css(/layout/basic/css/layout.css)-->
+    <!--@css(/layout/basic/css/ec-base-ui.css)-->
+    <!--@css(/layout/basic/css/ec-base-paginate.css)-->
+    <!--@css(/layout/basic/css/ec-base-help.css)-->
+    <!--@css(/layout/basic/css/ec-base-product.css)-->
+    <!--@css(/layout/basic/css/ec-base-button.css)-->
+    <!--@css(/layout/basic/css/ec-base-box.css)-->
+    <!--@css(/layout/basic/css/ec-base-layer.css)-->
+    <!--@css(/layout/basic/css/ec-base-tab.css)-->
+    <!--@css(/layout/basic/css/ec-base-table.css)-->
+    <!--@css(/layout/basic/css/ec-base-fold.css)-->
+    <!--@css(/layout/basic/css/ec-base-prdInfo.css)-->
+
+    <link
+      rel="preload"
+      href="/fonts/Noto-Sans-CJK-KR-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/fonts/Noto-Sans-CJK-KR-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/fonts/Segoe-UI-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/fonts/Segoe-UI-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- 스마트디자인에서는 JQuery 1.4.4 버전이 내장되어있습니다. 추가로 호출하면 충돌이 생길 수 있습니다. -->
+    <!--@js(/layout/basic/js/common.js)-->
+  </head>
+  <body id="main">
+    <div module="Popup_MultiPopup">
+      <!--
+            $banner_popup_no =
+            ※ 노출시킬 팝업의 ID를 숫자로 넣어주세요.
+        -->
+      {$popup}
+    </div>
+    <div module="Popup_MultiBanner">
+      <!--
+            $banner_popup_no =
+            ※ 노출시킬 배너의 ID를 숫자로 넣어주세요.
+        -->
+      {$banner}
+    </div>
+    <div id="wrap">
+      <!--@import(/layout/basic/sidebar.html)-->
+      <hr class="layout" />
+      <div id="container">
+        <!-- 헤더 -->
+        <!--@import(/layout/basic/header.html)-->
+        <hr class="layout" />
+        <div id="contents">
+          <!--@contents-->
+        </div>
+        <hr class="layout" />
+        <!--@import(/layout/basic/footer.html)-->
+      </div>
+    </div>
+    <!-- Smartlog -->
+    <script>
+        
+      // 팝업창
+      $(".btn_close").click(function () {
+        $(".main_popup").hide();
+        $(".popup-overlay").hide();
+      });
+
+      const toggleMainPopup = function () {
+        /* 스토리지 제어 함수 정의 */
+        const handleStorage = {
+          // 스토리지에 데이터 쓰기(이름, 만료일)
+          setStorage: function (name, exp) {
+            // 만료 시간 구하기(exp를 ms단위로 변경)
+            let date = new Date();
+            date = date.setTime(date.getTime() + exp * 24 * 60 * 60 * 1000);
+
+            // 로컬 스토리지에 저장하기
+            // (값을 따로 저장하지 않고 만료 시간을 저장)
+            localStorage.setItem(name, date);
+          },
+          // 스토리지 읽어오기
+          getStorage: function (name) {
+            let now = new Date();
+            now = now.setTime(now.getTime());
+            // 현재 시각과 스토리지에 저장된 시각을 각각 비교하여
+            // 시간이 남아 있으면 true, 아니면 false 리턴
+            return parseInt(localStorage.getItem(name)) > now;
+          },
+        };
+
+        // 쿠키 읽고 화면 보이게
+        if (handleStorage.getStorage("today")) {
+          $(".main_popup").removeClass("on");
+          $(".popup-overlay").addClass("on");
+        } else {
+          $(".main_popup").addClass("on");
+          $(".popup-overlay").removeClass("on");
+        }
+
+        // 오늘하루 보지 않기 버튼
+        $(".main_popup .btn_today_close").click(function () {
+          // 로컬 스토리지에 today라는 이름으로 1일(24시간 뒤) 동안 보이지 않게
+          handleStorage.setStorage("today", 1);
+          $(this).parents(".main_popup.on").removeClass("on");
+          $(".popup-overlay").addClass("on");
+        });
+
+        // 일반 닫기 버튼
+        $(".main_popup").on("click", ".btn_close", function () {
+          $(this).parents(".main_popup.on").removeClass("on");
+        });
+      };
+
+      $(function () {
+        toggleMainPopup();
+      });
+    </script>
+  </body>
+</html>

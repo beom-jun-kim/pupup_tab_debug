@@ -1,0 +1,10 @@
+.xans-myshop-asyncbenefit .info .memberInfo {padding:14px 20px; border-top:2px solid #000; border-bottom:2px solid #000; display: flex; align-items: center;}
+.xans-myshop-asyncbenefit .info .memberInfo i {font-size: 30px; margin-right: 10px;}
+.xans-myshop-asyncbenefit .info .memberInfo ul li {font-size: var(--normal-font);}
+.xans-myshop-asyncbenefit .info .xans-member-var-group_name {color: var(--primary-color);}
+.xans-myshop-asyncbankbook { padding:10px 20px;}
+.displaynone + .xans-myshop-asyncbankbook { border-top:0; }
+.xans-myshop-asyncbankbook li { display:block; font-size:var(-small-font); line-height:30px; }
+.xans-myshop-asyncbankbook li {position: relative;}
+.xans-myshop-asyncbankbook li span {position: absolute; right: 0; white-space: nowrap;}
+.xans-myshop-asyncbankbook #xans_myshop_bankbook_coupon_cnt:after {content: '개';}

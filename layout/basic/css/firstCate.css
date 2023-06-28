@@ -1,0 +1,237 @@
+main {
+    margin-top: 30px;
+}
+
+.mileage {
+    display: none;
+}
+
+.xans-product-listitem {
+    margin-top: 8px;
+}
+
+#new .minTitle h6 {
+    color: var(--primary-color);
+}
+
+#hotItem .minTitle h6 {
+    margin-bottom: 15px;
+}
+
+#hotItem .minTitle h6,
+#new .minTitle h6 {
+    font-weight: var(--bold-font);
+    font-size: var(--normal-font);
+}
+
+#new .desc p,
+#hotItem .desc p {
+    font-weight: var(--bold-font);
+    margin: 15px 0;
+    font-size: var(--title-font);
+    letter-spacing: -0.5px;
+    color: #2e2e2e;
+}
+
+.description .name b,
+.description .name span {
+    font-weight: 400;
+    color: var(--sec-font-color);
+}
+
+.description li:nth-child(2) span {
+    font-weight: var(--bold-font);
+}
+
+.xans-product-listitem>li:first-child {
+    margin-right: 10px;
+}
+
+/* new */
+section {
+    padding: 0 14px;
+}
+
+section#hotItem {
+    margin-top: 50px;
+}
+
+#new .newSlider .slick-initialized {
+    position: relative;
+}
+
+#new .newSlider .slick-dots {
+    top: -47px;
+}
+
+#new .newSlider .slick-dots,
+#hotItem .hotItemSlide .slick-dots {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#hotItem .hotItemSlide .slick-dots {
+    top: -50px;
+}
+
+#hotItem .hotItemSlide .slick-slide img {
+    display: inline-block;
+}
+
+#new .newSlider .slick-dots li,
+#hotItem .hotItemSlide .slick-dots li {
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+}
+
+#new .newSlider .slick-dots li:last-child,
+#hotItem .hotItemSlide .slick-dots li:last-child {
+    margin-right: 0;
+}
+
+#new .newSlider .slick-dots li button,
+#hotItem .hotItemSlide .slick-dots li button {
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #d8d8d8;
+}
+
+#new .newSlider .slick-dots .slick-active button,
+#hotItem .hotItemSlide .slick-dots .slick-active button {
+    background: #2e2e2e;
+}
+
+#hotItem .icon {
+    margin: 10px 0;
+    height: 22px;
+}
+
+#hotItem .slick-track {
+    height: 330px;
+}
+
+.xans-product-listmain .description {
+    font-size: var(--small-font);
+}
+
+.xans-product-listmain .description .name {
+    font-weight: 400;
+    height: 60px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.xans-product-listmain .description .name a {
+    line-height: 20px;
+}
+
+/* prdList */
+#prdList .prdListBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#prdList .prdListBox li {
+    width: 25%;
+    padding-bottom: 70px;
+}
+
+#prdList .desc p:first-child {
+    font-size: var(--small-font);
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+#prdList .desc p:nth-child(2) {
+    font-size: var(--small-font);
+    color: var(--sec-font-color);
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+#prdList .desc span {
+    padding-right: 10px;
+    color: var(--primary-color);
+}
+
+#prdList .desc p:last-child {
+    font-size: var(--normal-font);
+    font-weight: var(--bold-font);
+}
+
+#prdList .more {
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    margin: 100px auto;
+    cursor: pointer;
+    border: 2px solid #000;
+    text-align: center;
+}
+
+/* firCateList */
+#firCateList {
+    margin-bottom: 50px;
+}
+
+#firCateList .prdList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#firCateList .prdList>li {
+    width: 50%;
+    padding: 14px 14px 20px;
+}
+
+#hotItem .icon img,
+#span_mileage_text img,
+#firCateList .prdList>li .icon img {
+    width: auto;
+}
+
+#firCateList .prdList>li .icon {
+    height: 23px;
+    margin: 10px 0;
+}
+
+
+#firCateList .prdCount {
+    margin: 20px 0 10px;
+    font-size: var(--small-font);
+}
+
+/* sports */
+#wear .imgDesc {
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+#wear .imgDesc:last-child {
+    margin-bottom: 100px;
+}
+
+#wear .bigTitle {
+    margin-top: 20px;
+    font-size: var(--title-font);
+    letter-spacing: -1px;
+}
+
+#wear .minTitle {
+    font-size: var(--normal-font);
+    font-weight: 300;
+    margin: 10px 0 50px;
+}
+
+#wear .imgDesc .shopBtn {
+    border: 2px solid #000;
+    padding: 10px 40px;
+    font-weight: 500;
+}
